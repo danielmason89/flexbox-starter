@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #222;
   height: 100%;
   width: 100%;
 }
@@ -107,27 +107,47 @@ body {
   font-size: 1.25em;
   height: 100%;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 header,
 footer {
+  display: flex;
+  justify-content: flex-start;
   background-color: #222;
-  height: 80px;
-  width: 100%;
+  width: 50%;
+  border-bottom: solid aqua 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+header h1 {
+  font-family: "Lora", sans-serif;
+  font-size: 2rem;
+}
+
+p span {
+  font-family: "Lora", sans-serif;
 }
 
 main {
-  background-color: #ccc;
-  height: 250px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  flex: 12 0 75%;
+  height: 120px;
+  border: 0.25rem solid rgb(135, 33, 148);
+}
+
+main p {
+  font-size: 1.5rem;
 }
 
 header,
 footer,
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .flex-container {
@@ -138,16 +158,27 @@ main {
   justify-content: space-between;
 }
 
+#div-1,
+#div-2 {
+  border-right: solid aqua 0.25rem;
+}
+
 .flex-items {
   color: #fff;
   line-height: 1.5em;
+  padding: 0 1rem;
   font-size: 1.6em;
-  background-color: #f16059;
   width: 30%;
-  height: 200px;
+  height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex: 10% 100% 10%;
+  overflow: hidden;
+}
+
+footer i {
+  padding: 30px 20px 0 0;
 }
 
 /* ==========================================================================
